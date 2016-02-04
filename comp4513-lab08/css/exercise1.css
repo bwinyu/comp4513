@@ -1,0 +1,30 @@
+.alert {
+    margin: 20px 0px;
+    padding:12px;
+}
+.info {
+    color: #105B63;
+    background-color: #FFD34E;
+}
+.success {
+    color: #FFFAD5;
+    background-color: #105B63;
+}
+.warning {
+    color: #105B63;
+    background-color: #DB9E36;
+}
+.error {
+    color: #FFFAD5;
+    background-color: #BD4932;
+}
+.alert i {
+    margin: 10px 15px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}        
+        
+div p {
+    margin-left:60px;   
+}
+i { float: left; }  

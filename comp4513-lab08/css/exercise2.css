@@ -1,0 +1,41 @@
+main {
+    margin: 20px 20px;
+}
+
+#featured {
+    margin: 0;
+    border: solid 1px #ccc; 
+    padding: 4px 4px;
+    width: 645px;
+}
+
+#featured figcaption {
+    position: absolute;
+    top: 452px;
+    left: 33px;
+    width: 636px;
+    height: 40px;
+    background-color: floralwhite;
+    font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    opacity: 0;
+    padding: 12px 2px 2px 2px;
+    text-align: center;
+    display: block;
+}
+
+#thumbnails img {
+    width: 116px;   
+    height: 116px;
+    border: solid 1px #ccc;
+    padding: 4px;
+    margin: 5px 1px;
+}
+
+#thumbnails img:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+

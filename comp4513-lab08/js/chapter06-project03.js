@@ -13,7 +13,6 @@ window.addEventListener ("load", function () {
 	var thumbnails = document.querySelectorAll (".thumbnail");
 
 	for (var i = 0; i < thumbnails.length; i++) {
-		console.log (thumbnails[i]);
 		thumbnails[i].addEventListener ("mouseenter", spanImage);
 		thumbnails[i].addEventListener ("mouseout", spanImage);
 	}
@@ -21,11 +20,11 @@ window.addEventListener ("load", function () {
 
 function spanImage (e) {
 	if (e.type == "mouseenter") {
-		img.setAttribute ("src", "images/art/small/05030.jpg");
+		img.setAttribute ("src", "images/art/small/" + e.target.src.substring (e.target.src.lastIndexOf ("/")));
 		div.style.left = e.clientX + "px";
 		div.style.top = e.clientY + "px";
 		div.style.display = "inline";
 	} else if (e.type == "mouseout") {
 		div.style.display = "none";
 	}
-}	
+}
